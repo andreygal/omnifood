@@ -20,6 +20,15 @@ html {
     text-rendering: optimizeLegibility; 
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.'; 
+    clear: both;
+    display: block;
+    height: 0; 
+    visibility: hidden; 
+}
+
 /*REUSABLE COMPONENTS*/
 .row {
     width: 1140px; 
@@ -77,6 +86,14 @@ ion-icon {
     font-size: 350%; 
     color: #f39c12;
     margin-bottom: 10px; 
+}
+
+.icon-custom {
+    display: inline-block;
+    margin-right: 5px; 
+    vertical-align: middle;
+    margin-top: 7px; 
+
 }
 
 /*PARAGRAPHS*/
@@ -188,11 +205,21 @@ header {
     border-bottom: 2px solid #f39c12;
 }
 
+/*FEATURES*/
+.section-features .long-copy {
+    margin-bottom: 30px; 
+}
+
 /*MEALS*/
+
+.section-meals {
+    padding: 0;
+}
 
 .meals-showcase {
     list-style: none;
     width: 100%;
+    margin: 
 }
 
 .meals-showcase li {
@@ -204,9 +231,75 @@ header {
 .meal-photo { 
     width: 100%; 
     margin: 0;
+    overflow: hidden;
+    background-color: #000; 
 }
 
 .meal-photo img {
+    opacity: 0.7; 
     width: inherit; 
     height: auto; 
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1; 
+}
+
+/*HOW IT WORKS*/
+.section-steps {
+    background-color: #f4f4f4; 
+}
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%; 
+    margin-top: 30px; 
+}
+
+.steps-box:last-child {
+    padding-left: 3%; 
+    margin-top: 70px; 
+}
+.app-screen {
+    width: 50%; 
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 100px; 
+}
+
+.works-step div{
+    color: #f39c12;
+    border: 2px solid #f39c12; 
+    display: inline-block;
+    border-radius: 50%; 
+    height: 50px;
+    width: 50px; 
+    text-align: center;
+    padding: 5px; 
+    float: left; 
+    font-size: 150%;
+    margin-right: 25px; 
+}
+
+.btn-app img {
+    height: 50px; 
+    width: auto; 
+    margin-right: 10px; 
+}
+
+/*CITIES*/
+.box img {
+    width: 100%; 
+    height: auto; 
+}
+
+.city-feature {
+   
 }
