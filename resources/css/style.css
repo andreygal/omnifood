@@ -428,7 +428,8 @@ cite img {
 /*CONTACT FORM*/
 .contact-form {
     width: 60%; 
-    margin: 0 auto; 
+    margin: 0 10% 0 10%;
+
 }
 
 input[type="text"],
@@ -444,4 +445,12 @@ textarea {
 textarea {
     height: 100px; 
     
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0; 
+}
+
+*:focus {
+    outline: none; 
 }
