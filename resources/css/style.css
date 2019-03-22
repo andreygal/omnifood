@@ -96,6 +96,23 @@ ion-icon {
 
 }
 
+/*GENERIC LINKS*/
+a:link,
+a:visited {
+    color: #f39c12;
+    text-decoration: none; 
+    border-bottom: 1px solid #f39c12;
+    padding-bottom: 1px;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent; 
+    transition: border-bottom 0.2s, color 0.2s; 
+}
+
+
 /*PARAGRAPHS*/
 .long-copy {
     line-height: 145%; 
@@ -111,7 +128,8 @@ ion-icon {
 
 /*BUTTONS*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px; 
     font-weight: 300; 
@@ -122,7 +140,8 @@ ion-icon {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]{
     background-color: #f39c12; 
     border: 1px solid #f39c12;
     color: #fff; 
@@ -137,7 +156,10 @@ ion-icon {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
     background-color: #f5aa32;
 }
 
@@ -294,12 +316,132 @@ header {
     margin-right: 10px; 
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0; 
+}
+
 /*CITIES*/
 .box img {
     width: 100%; 
     height: auto; 
 }
 
-.city-feature {
-   
+
+
+/*TESTIMONIALS*/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed; 
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic; 
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px; 
+}
+
+blockquote:before {
+    content: "\201c";
+    font-size: 500%; 
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -3px; 
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px; 
+    display: block; 
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+
+/*PLANS*/
+.checkmark {
+    font-size: 32px; 
+    vertical-align: middle;
+}
+
+.section-plans {
+    background-color: #f4f4f4; 
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px; 
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #fcfcfc; 
+}
+
+.plan-box div {
+    padding: 15px; 
+    border-bottom: 1px solid #e8e8e8; 
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0; 
+}
+
+.plan-price {
+    font-size: 300%; 
+    margin-bottom: 10px;
+    font-weight: 200; 
+    color: #f39c12;
+}
+
+.plan-price span {
+    font-size: 30%; 
+    font-weight: 300; 
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0; 
+}
+
+/*CONTACT FORM*/
+.contact-form {
+    width: 60%; 
+    margin: 0 auto; 
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 80%;
+    padding: 7px; 
+    border-radius: 3px; 
+    border: 1px solid #fcfcfc;
+}
+
+textarea {
+    height: 100px; 
+    
 }
