@@ -11,13 +11,15 @@ Orange Shifted: #f5aa32
     box-sizing: border-box; 
 }
 
-html {
+html, body
+{
     background-color: #fff;
     color: #3e3e3e; 
     font-family: 'Lato', 'Arial', sans-serif; 
     font-weight: 300;
     font-size: 20px; 
-    text-rendering: optimizeLegibility; 
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden; 
 }
 
 .clearfix {zoom: 1}
@@ -182,7 +184,6 @@ header {
     background-size: cover; 
     background-position: center; 
     height: 100vh; 
-    
 }
 
 .hero-text-box {
@@ -198,6 +199,14 @@ header {
     width: auto; 
     float: left;
     margin-top: 20px; 
+}
+
+.logo-black { 
+    height: 50px;
+    width: auto; 
+    float: left;
+    margin: 5px 0;
+    display: none; 
 }
 
 .main-nav {
@@ -227,13 +236,33 @@ header {
     border-bottom: 2px solid #f39c12;
 }
 
+/*STICKY NAVIGATION*/
+.sticky {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.98); 
+    box-shadow: 0 2px 2px #f4f4f4; 
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0; 
+    color: #555;
+}
+
+.sticky .logo-black { display: block; }
+.sticky .logo { display: none; }
+
 /*FEATURES*/
 .section-features .long-copy {
     margin-bottom: 30px; 
 }
 
 /*MEALS*/
-
 .section-meals {
     padding: 0;
 }
@@ -241,7 +270,6 @@ header {
 .meals-showcase {
     list-style: none;
     width: 100%;
-    margin: 
 }
 
 .meals-showcase li {
@@ -269,6 +297,8 @@ header {
     transform: scale(1.03);
     opacity: 1; 
 }
+
+
 
 /*HOW IT WORKS*/
 .section-steps {
@@ -321,12 +351,12 @@ header {
     border: 0; 
 }
 
+
 /*CITIES*/
 .box img {
     width: 100%; 
     height: auto; 
 }
-
 
 
 /*TESTIMONIALS*/

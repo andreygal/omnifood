@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css"> 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300i" rel="stylesheet" type="text/css">
         <title>Omnifood</title>
     </head>
@@ -13,6 +16,7 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logo-white.png" alt="Omnifood Logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood Logo" class="logo-black">
                     <ul class="main-nav"> 
                         <li><a href="#">Food delivery</a></li>
                         <li><a href="#">How it works</a></li>
@@ -28,7 +32,7 @@
             </div>
         </header>
         
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
@@ -142,7 +146,6 @@
                     <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="IOS Button"></a>
                     <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Android Button"></a>
                 </div>
-                
             </div>
         </section>
         <section class="section-cities">
@@ -398,7 +401,12 @@
                 </p>
             </div>
         </footer>
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>
 
