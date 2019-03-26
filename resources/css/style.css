@@ -244,6 +244,7 @@ header {
     width: 100%; 
     background-color: rgba(255, 255, 255, 0.98); 
     box-shadow: 0 2px 2px #f4f4f4; 
+    z-index: 9999; 
 }
 
 .sticky .main-nav { margin-top: 18px; }
@@ -256,6 +257,20 @@ header {
 
 .sticky .logo-black { display: block; }
 .sticky .logo { display: none; }
+
+/*MOBILE NAVIGATION*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.menu {
+    font-size: 200%;
+    color: #fff; 
+}
 
 /*FEATURES*/
 .section-features .long-copy {
@@ -557,4 +572,22 @@ footer p {
     text-align: center; 
     font-size: 90%; 
     margin-top: 30px; 
+}
+
+/*Animations*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0; 
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1; 
 }
