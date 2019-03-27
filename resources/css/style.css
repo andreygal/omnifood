@@ -496,6 +496,21 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0; 
 }
 
+.form-messages {
+    width: 70%;
+    margin: 0 auto; 
+    padding: 10px; 
+    border-radius: 3px; 
+    margin-bottom: 20px; 
+    display: flex; 
+    justify-content: center;
+    color: #333; 
+    font-weight: 400;
+    
+}
+
+.success { background-color: rgba(0, 255, 88, 0.66); }
+.error { background-color: rgba(221, 0, 0, 0.74); }
 *:focus {
     outline: none; 
 }
