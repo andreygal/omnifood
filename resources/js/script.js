@@ -69,17 +69,15 @@ $(document).ready(function() {
     
     /*MOBILE NAVIGATION*/
     $('.js--nav-icon').click(function() {
-        console.log('uuuu');
+
         var nav = $('.js--main-nav');
         
         $('.menu').attr('name', function (i, attr) {
             return attr == 'menu' ? 'close' : 'menu'
         });
         
-       
         nav.slideToggle(200);
         
-   
     });
     
     
